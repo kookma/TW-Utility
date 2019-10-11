@@ -1,0 +1,45 @@
+created: 20190930050545887
+modified: 20191006160957854
+tags: $:/tags/Macro
+title: $:/plugins/kookma/utility/macro/transclusion
+type: text/vnd.tiddlywiki
+
+\define code(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+
+This is selected tiddler: <<currentTiddler>>
+
+<$codeblock language={{{[<selected-tiddler>get[type]]}}} code={{{[<selected-tiddler>get[text]]}}}/>
+</$set>
+\end
+
+\define code-link(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+<$link to=<<selected-tiddler>>/>
+<$codeblock language={{{[<selected-tiddler>get[type]]}}} code={{{[<selected-tiddler>get[text]]}}}/>
+</$set>
+\end
+
+\define content(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+<$link to=<<selected-tiddler>>/>
+<$transclude tiddler=<<selected-tiddler>> mode="block"/>
+</$set>
+\end
+
+\define fields(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+<$link to=<<selected-tiddler>>/>
+<dl>
+<$list filter='[is[current]fields[]] -[enlist[text title created modified tags creator modifier]]' variable="fld">
+<dt><<fld>></dt><dd><$text text={{{[get<fld>]}}}/></dd>
+</$list>
+</dl>
+</$set>
+\end
+
+\define description(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+<dl><dt><$link to=<<selected-tiddler>>/></dt><dd><$transclude tiddler=<<selected-tiddler>> field="description"/></dd></dl>
+</$set>
+\end

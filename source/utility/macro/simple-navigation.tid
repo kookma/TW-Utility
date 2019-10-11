@@ -1,0 +1,19 @@
+created: 20190823062102008
+description: create a new tiddler tagged with $:/tags/Viewtemplate and call simple-navigation with desired tag
+modified: 20190930221904488
+tags: $:/tags/Macro
+title: $:/plugins/kookma/utility/macro/simple-navigation
+type: application/x-tiddler
+
+\define simple-navigation(myTag:"demo", class)
+<$list filter="[all[current]tag[$myTag$]]">
+<div class="$class$">
+<$list filter="[tag[$myTag$]before<currentTiddler>]" variable="prevTiddler">
+<$button to=<<prevTiddler>> tooltip=<<prevTiddler>> class="tc-btn-invisible">previous</$button>
+</$list>
+<$list filter="[tag[$myTag$]after<currentTiddler>] [tag[$myTag$]before<currentTiddler>] +[count[]] -1" variable=ignore>|</$list>
+<$list filter="[tag[$myTag$]after<currentTiddler>]" variable="nextTiddler">
+<$button to=<<nextTiddler>> tooltip=<<nextTiddler>> class="tc-btn-invisible">next</$button></$list>
+</div>
+</$list>
+\end

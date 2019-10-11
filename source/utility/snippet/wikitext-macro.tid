@@ -1,0 +1,12 @@
+caption: Wikitext-example
+created: 20181007154126921
+creator: Mohammad
+modified: 20190930180144192
+modifier: Mohammad
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/kookma/utility/snippet/wikitext-macro
+type: text/vnd.tiddlywiki
+
+<<wikitext-example-without-html 
+src:"""
+""">>

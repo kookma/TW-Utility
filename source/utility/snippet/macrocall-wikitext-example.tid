@@ -1,0 +1,12 @@
+caption: Wikitext-example macrocall 
+created: 20181023161605661
+creator: Mohammad
+modified: 20190930180141488
+modifier: Mohammad
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/kookma/utility/snippet/macrocall-wikitext-example
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""
+"""/>

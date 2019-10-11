@@ -1,0 +1,12 @@
+created: 20181212041419278
+creator: Mohammad
+description: this view template displays the content of macro tiddlers
+modified: 20191006053824159
+modifier: Mohammad
+tags: $:/tags/ViewTemplate
+title: $:/plugins/kookma/utility/viewtemplate/show-macro-content
+type: application/x-tiddler
+
+<$list filter="[all[current]tag[$:/tags/Macro]]">
+<pre><$view/></pre>
+</$list>
