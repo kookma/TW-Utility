@@ -1,37 +1,12 @@
-## Utility plugin
-The utility plugin is a collection of macros, styles, templates provides tools for better and simpler documentation. 
+## What is Utility plugin?
+Utility plugin is a small set of stylesheets, templates and macros. It has different tools for customizing and authoring specially for developers.
 
+## Install
 
-!! Demo and tutorial
-For detailed description of Utility plugin tools and demo have a look at
+### Packaged plugin
+1. Drag and drop $:/plugins/kookma/utility into your wiki
+2. Save and reload your wiki
 
-https://kookma.github.io/TW-Utility/
-
-
-## Contents
-
-Utility plugin includes the below tools
-
-* Macros
-** custom transclusion
-** doc-svg
-**  .lorem
-** show-macro
-** simple navigation
-** wikitext 
-
-* Styles
-** Colorful sidebar tab
-** Tiddlywiki version badge
-
-* Template
-** Show fields in view mode
-** Show macro contents
-
-* Snippets
-** wikitext macro
-
-
-## Utility settings tab
-
-The Utility plugin has a settings tab under $:/ControlPanel, Settings tab, Utility tab. It allows to customize the behaviour of Utility plugin.
+### Client-Server installation (separate files)
+* For Node.js (server version) download the utility folder from [source](https://github.com/kookma/TW-Utility) folder and paste in your Tiddlywiki plugins folder
+* For local installation put the utility folder into your local plugins folder under your wiki folder
