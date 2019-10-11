@@ -1,8 +1,16 @@
 created: 20190930044127683
-modified: 20191011141122234
+modified: 20191011164958664
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
+
+!! Revision 0.6.0 beta 
+<<<
+* Date: [11th Oct 2019]
+* beta release
+* simple-navigation documentation improved
+* the myTag parameter in simple-navigation renamed to tag
+<<<
 
 !! Revision 0.5.0 beta 
 <<<
