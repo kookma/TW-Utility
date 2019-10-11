@@ -1,5 +1,5 @@
 created: 20190930044127683
-modified: 20191011114510943
+modified: 20191011144633214
 tags: 
 title: $:/plugins/kookma/utility/readme
 type: text/vnd.tiddlywiki
@@ -46,3 +46,6 @@ The Utility plugin has a settings tab under $:/ControlPanel, Settings tab, Utili
 
 <<content $:/plugins/kookma/utility/ui/ControlPanel/Settings>>
 <<<
+
+!! Utility settings on sidebar
+Utility settings can be shown on the sidebar under tab `More`. To enable this feature simply open $:/ControlPanel, Settings tab, Utility tab and click the checkbox with `Show setting in more sidebar`.
