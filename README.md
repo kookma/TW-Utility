@@ -1,6 +1,9 @@
 ## What is Utility plugin?
 Utility plugin is a small set of stylesheets, templates and macros. It has different tools for customizing and authoring specially for developers.
 
+## Demo and tutorial
+For demo and tutorial have a look at: https://kookma.github.io/TW-Utility/
+
 ## Install
 
 ### Packaged plugin
