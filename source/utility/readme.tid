@@ -1,5 +1,5 @@
 created: 20190930044127683
-modified: 20191011144633214
+modified: 20191013034021942
 tags: 
 title: $:/plugins/kookma/utility/readme
 type: text/vnd.tiddlywiki
@@ -34,7 +34,7 @@ Utility plugin includes the below tools
 
 * Template
 ** Show fields in view mode
-** Show macro contents
+** Display global macro content
 
 * Snippets
 ** wikitext macro

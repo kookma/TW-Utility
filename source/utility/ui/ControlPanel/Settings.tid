@@ -1,7 +1,7 @@
 caption: Utility
 created: 20190930212747824
-modified: 20191011171146271
-tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
+modified: 20191013034045921
+tags: $:/tags/ControlPanel/SettingsTab
 title: $:/plugins/kookma/utility/ui/ControlPanel/Settings
 type: text/vnd.tiddlywiki
 
@@ -15,5 +15,5 @@ These settings let you customise the behaviour of Utility plugin.
 ;Options
 :<$checkbox tiddler="$:/plugins/kookma/utility/pagecontrol/view-fields-button" tag="$:/tags/PageControls"> Enable show fields</$checkbox>
 :<$checkbox tiddler="$:/plugins/kookma/utility/stylesheet/colorful-sidebar-tab" tag="$:/tags/Stylesheet"> Colorify sidebar tabs</$checkbox>
-:<$checkbox tiddler="$:/plugins/kookma/utility/viewtemplate/show-macro-content" tag="$:/tags/ViewTemplate"> Show macro content</$checkbox>
+:<$checkbox tiddler="$:/plugins/kookma/utility/viewtemplate/display-content-global-macro" tag="$:/tags/ViewTemplate"> Display the content of global macro</$checkbox>
 :<$checkbox tiddler="$:/plugins/kookma/utility/stylesheet/tw-version" tag="$:/tags/Stylesheet"> Show the Tiddlywiki version badge</$checkbox>
