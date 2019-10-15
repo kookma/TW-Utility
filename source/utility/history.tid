@@ -1,10 +1,17 @@
 created: 20190930044127683
-modified: 20191013033925254
+modified: 20191015051007388
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
 
-!! Revision 1 
+!! Revision 1.1.0 
+<<<
+* Date: [15th Oct 2019]
+* The `simple-navigation` has new parameter `close`
+* The `simple-navigation` macro optionally closes the current tiddler when the previous | next button is clicked
+<<<
+
+!! Revision 1.0.0 
 <<<
 * Date: [13th Oct 2019]
 * stable release
