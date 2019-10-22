@@ -1,7 +1,7 @@
 created: 20190317174614898
 creator: Mohammad
 description: This is a customized version of `show-macro` used in TW-Yazd. This macro is used to display the macro codes in specified place.
-modified: 20191006160907702
+modified: 20191022085623899
 modifier: Mohammad
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macro/show-macro
@@ -13,9 +13,6 @@ type: application/x-tiddler
 
 \define show-macro(tiddler)
 <$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
-
-This is selected-tiddler: <<selected-tiddler>>
-
 <$macrocall $name='find'
   text={{{[<selected-tiddler>get[text]]}}}
   begin="\define"
