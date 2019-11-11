@@ -1,14 +1,11 @@
 created: 20190930050545887
-modified: 20191006160957854
+modified: 20191111154126199
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macro/transclusion
 type: text/vnd.tiddlywiki
 
 \define code(tiddler)
 <$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
-
-This is selected tiddler: <<currentTiddler>>
-
 <$codeblock language={{{[<selected-tiddler>get[type]]}}} code={{{[<selected-tiddler>get[text]]}}}/>
 </$set>
 \end

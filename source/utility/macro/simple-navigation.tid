@@ -1,6 +1,6 @@
 created: 20190823062102008
 description: create a new tiddler tagged with $:/tags/Viewtemplate and call simple-navigation with desired tag
-modified: 20191015045122789
+modified: 20191111154126203
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macro/simple-navigation
 type: application/x-tiddler
