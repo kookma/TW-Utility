@@ -1,8 +1,21 @@
 created: 20190930044127683
-modified: 20191111154126233
+modified: 20191209121629652
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
+
+!! Revision 1.6.0 
+<<<
+* Date: [9th Dec 2019]
+* [FIXED] Colorful sidebar tab moved to Shiraz plugin
+<<<
+
+!! Revision 1.5.0 
+<<<
+* Date: [21st Nov 2019]
+* [NEW] Admin modal window added
+* [NEW] Use Admin tools to show hide different Tiddlywiki elements
+<<<
 
 !! Revision 1.4.0 
 <<<

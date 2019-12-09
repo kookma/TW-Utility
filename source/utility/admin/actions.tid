@@ -1,0 +1,8 @@
+created: 20190912082519234
+key: ((admin-tools))
+modified: 20191121054544417
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/kookma/utility/admin/actions
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/kookma/utility/admin/modal" />
