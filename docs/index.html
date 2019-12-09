@@ -251,6 +251,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
 
+<li>$:/trashbin/demo/list-search</li>
+
 <li>data/demo-macro</li>
 
 <li>data/tid01</li>
@@ -260,8 +262,6 @@ Error message and password prompt
 <li>demo/display-content-global-macro</li>
 
 <li>demo/doc-svg</li>
-
-<li>demo/list-search</li>
 
 <li>demo/macro-lorem</li>
 
@@ -11177,6 +11177,19 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20180217184913341" modified="20191111154126037" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
 <pre>fluid-fixed</pre>
 </div>
+<div created="20191209123426394" modified="20191209123427440" tags="$:/tags/trashbin" title="$:/trashbin/demo/list-search" type="application/json">
+<pre>{
+    &quot;text&quot;: &quot;!! List and search\nThe `list-search` macro can display a list of tiddlers based on some criteria with a search box above the list, lets to search  within the result. This macro was originally developed by [[Tobias Beer|https://tobibeer.github.io/tb5/#list-search]]\n\n\n!! Syntax\n```\n&lt;&lt;simple-navigation tag class close&gt;&gt;\n```\n\n!! Content and parameters\n|Parameter |Type |Description |h\n|tag |optional |the title of tag for which navigation buttons are created. Default value is `demo` |\n|class |optional |optinal css class to customize the format of `previous | next` buttons like color, font size and style, ... |\n|close |optional |close parameter if set to `yes` will close the current current tiddler when the previous or next button is clicked. Defualt value is `no`.|\n\n;Important\n: To use this macro, create a new tiddler tagged with `$:/tags/ViewTemplate` and then call the `simple-navigation` inside it.\n: It is possible to call the `simple-navigation` macro several times with different tags and classes.\n: The sequence (order) of tiddlers can be simply changed using the tag pill! So open one of the tiddler tagged with target tag and then click on the tag pill and re-order the tiddlers. More information on reordering tiddlers can be found at [[tag operator|https://tiddlywiki.com/#tag%20Operator]]\n\n\n!! Examples\nCreate a new tiddler called for example [[demo/My-Simple-Navigation]] or whatever you like, tag it with `$:/tags/ViewTemplate` and call the macro as below\n\n```\n&lt;&lt;simpleNavigation close:\&quot;yes\&quot;&gt;&gt;\n```\nNext create some tiddlers tagged with &lt;&lt;tag demo&gt;&gt;. You will see all those tiddlers have a set of `previous | next` buttons at the bottom. Note to the `close` parameter value. On navigation (clicking previous or next button) the current tiddler will be closed.\n\nTo use the simple navigation for tiddlers tagged with `tutorial` in the above tiddler add another call to the macro as below\n\n```\n&lt;&lt;simpleNavigation tag:\&quot;tutorial\&quot;&gt;&gt;\n```\n\n!! Sample class\nTo customize the format of buttons, one can send a CSS class. For example the below class changes the font style to bold and the color to dodger blue. \n\n```\n.myClass{\n font-weight: bold;\n color:dodgerblue;\n}\n```\nTo use the above class put it in a tiddler tagged with `$:/tags/Stylesheet` and call the macro as below\n\n```\n&lt;&lt;simpleNavigation tag:\&quot;tutorial\&quot; class:\&quot;myClass\&quot;&gt;&gt;\n```\n\n\n!! Remarks\n* It is important to note the tiddler from which macro is called shall have the `$:/tags/ViewTemplate` tag, if not, the buttons wont appear.\n* Dont tag a tiddler with more than one of those tags which have simple navigation\n* When the `close` parameter is used with `yes` one should note that navigation causes the current tiddler to be closed even if it is already opened in the storyriver.&quot;,
+    &quot;bag&quot;: &quot;default&quot;,
+    &quot;revision&quot;: &quot;0&quot;,
+    &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+    &quot;title&quot;: &quot;demo/list-search&quot;,
+    &quot;tags&quot;: &quot;demo&quot;,
+    &quot;modified&quot;: &quot;20191209112334175&quot;,
+    &quot;created&quot;: &quot;20191209104656971&quot;,
+    &quot;caption&quot;: &quot;List and search&quot;
+}</pre>
+</div>
 <div created="20191012184259914" modified="20191111154126024" tags="$:/tags/Macro" title="data/demo-macro" type="text/vnd.tiddlywiki">
 <pre>\define demo-macro()
 This is a sample macro.
@@ -11227,63 +11240,6 @@ Inserting svg //without// `doc-svg` macro looks like below, which is ugly!
 src:&quot;&quot;&quot;{{$:/core/images/close-button}}
 &quot;&quot;&quot;&gt;&gt;
 </pre>
-</div>
-<div caption="List and search" created="20191209104656971" modified="20191209112334175" tags="demo" title="demo/list-search" type="text/vnd.tiddlywiki">
-<pre>!! List and search
-The `list-search` macro can display a list of tiddlers based on some criteria with a search box above the list, lets to search  within the result. This macro was originally developed by [[Tobias Beer|https://tobibeer.github.io/tb5/#list-search]]
-
-
-!! Syntax
-```
-&lt;&lt;simple-navigation tag class close&gt;&gt;
-```
-
-!! Content and parameters
-|Parameter |Type |Description |h
-|tag |optional |the title of tag for which navigation buttons are created. Default value is `demo` |
-|class |optional |optinal css class to customize the format of `previous | next` buttons like color, font size and style, ... |
-|close |optional |close parameter if set to `yes` will close the current current tiddler when the previous or next button is clicked. Defualt value is `no`.|
-
-;Important
-: To use this macro, create a new tiddler tagged with `$:/tags/ViewTemplate` and then call the `simple-navigation` inside it.
-: It is possible to call the `simple-navigation` macro several times with different tags and classes.
-: The sequence (order) of tiddlers can be simply changed using the tag pill! So open one of the tiddler tagged with target tag and then click on the tag pill and re-order the tiddlers. More information on reordering tiddlers can be found at [[tag operator|https://tiddlywiki.com/#tag%20Operator]]
-
-
-!! Examples
-Create a new tiddler called for example [[demo/My-Simple-Navigation]] or whatever you like, tag it with `$:/tags/ViewTemplate` and call the macro as below
-
-```
-&lt;&lt;simpleNavigation close:&quot;yes&quot;&gt;&gt;
-```
-Next create some tiddlers tagged with &lt;&lt;tag demo&gt;&gt;. You will see all those tiddlers have a set of `previous | next` buttons at the bottom. Note to the `close` parameter value. On navigation (clicking previous or next button) the current tiddler will be closed.
-
-To use the simple navigation for tiddlers tagged with `tutorial` in the above tiddler add another call to the macro as below
-
-```
-&lt;&lt;simpleNavigation tag:&quot;tutorial&quot;&gt;&gt;
-```
-
-!! Sample class
-To customize the format of buttons, one can send a CSS class. For example the below class changes the font style to bold and the color to dodger blue. 
-
-```
-.myClass{
- font-weight: bold;
- color:dodgerblue;
-}
-```
-To use the above class put it in a tiddler tagged with `$:/tags/Stylesheet` and call the macro as below
-
-```
-&lt;&lt;simpleNavigation tag:&quot;tutorial&quot; class:&quot;myClass&quot;&gt;&gt;
-```
-
-
-!! Remarks
-* It is important to note the tiddler from which macro is called shall have the `$:/tags/ViewTemplate` tag, if not, the buttons wont appear.
-* Dont tag a tiddler with more than one of those tags which have simple navigation
-* When the `close` parameter is used with `yes` one should note that navigation causes the current tiddler to be closed even if it is already opened in the storyriver.</pre>
 </div>
 <div caption="Lorem macro" created="20191002155658291" modified="20191111154126001" tags="other" title="demo/macro-lorem" type="text/vnd.tiddlywiki">
 <pre>!! Macro lorem
