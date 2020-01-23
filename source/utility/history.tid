@@ -1,8 +1,14 @@
 created: 20190930044127683
-modified: 20200123151829768
+modified: 20200123202123333
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
+
+!! Revision 1.7.1
+<<<
+* Date: [24th Jan 2020]
+* [FIXED] Minor improvement in filter textbox to show tiddler raw content
+
 
 !! Revision 1.7.0 
 <<<
