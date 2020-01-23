@@ -1,8 +1,6 @@
 created: 20190317174614898
-creator: Mohammad
 description: This is a customized version of `show-macro` used in TW-Yazd. This macro is used to display the macro codes in specified place.
-modified: 20191111154126207
-modifier: Mohammad
+modified: 20200123200937632
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macro/show-macro
 type: application/x-tiddler

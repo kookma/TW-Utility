@@ -1,19 +1,17 @@
 created: 20181212041419278
-creator: Mohammad
 description: this view template displays the content of global macro tiddlers
-modified: 20200123151649931
-modifier: Mohammad
+modified: 20200123200937746
 tags: $:/tags/ViewTemplate
 title: $:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content
-type: application/x-tiddler
+type: text/vnd.tiddlywiki
 
 <$set name="revealFilters" tiddler="$:/plugins/kookma/utility/config/reveal-tags" field=text>
-<$list filter="
-  [all[current]tag[show-content]] 
+<$list filter="[all[current]tag[show-content]]
   [all[current]tag[$:/tags/EditTemplate]]
   [all[current]tag[$:/tags/ViewTemplate]] 
   [all[current]tag[$:/tags/Macro]]
-  [all[current]subfilter<revealFilters>]  +[limit[1]]">
+  [all[current]subfilter<revealFilters>] +[limit[1]]">
 <$codeblock code={{!!text}} language="xml" />
 </$list>
 </$set>
+

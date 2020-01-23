@@ -1,9 +1,7 @@
 caption: {{$:/plugins/kookma/utility/images/view-fields.svg}} {{$:/language/Buttons/Utility/Caption}}
 created: 20181010190533135
-creator: Mohammad
 description: Show a toggle button for view fields
-modified: 20191118041414954
-modifier: Mohammad
+modified: 20200123200937828
 tags: $:/tags/PageControls
 title: $:/plugins/kookma/utility/pagecontrol/view-fields-button
 type: text/vnd.tiddlywiki
