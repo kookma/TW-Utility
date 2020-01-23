@@ -1,8 +1,17 @@
 created: 20190930044127683
-modified: 20191209121629652
+modified: 20200123151829768
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
+
+!! Revision 1.7.0 
+<<<
+* Date: [23rd Jan 2020]
+* [NEW] The tiddler raw content (or unwikified content) can be displayed on demand
+* [NEW] On demand all tiddlers tagged with `show-content`, `$:/tags/Macro`, `$:/tags/ViewTemplate`, `$:/tags/EditTemplate`, and `$:/tags/PageTemplate`
+* [FIXED] The settings page gets filters to include tiddlers meet those filter in display-tiddler-raw-content template
+* [FIXED] The display-global-macro-content template renamed to display-tiddler-raw-content
+<<<
 
 !! Revision 1.6.0 
 <<<

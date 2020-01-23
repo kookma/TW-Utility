@@ -1,6 +1,6 @@
 created: 20190722142023425
 creator: Mohammad
-modified: 20191111154126165
+modified: 20200123133103139
 modifier: Mohammad
 tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/utility/stylesheet/doc-svg
@@ -10,3 +10,6 @@ type: text/css
 width: 1.2em;
 height: 1.2em;
 vertical-align: middle;}
+
+.kk-ut-txt{
+min-width:50ch;}
