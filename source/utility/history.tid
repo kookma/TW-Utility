@@ -1,8 +1,14 @@
 created: 20190930044127683
-modified: 20200123202123333
+modified: 20200126153252837
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
+
+!! Revision 1.7.2
+<<<
+* Date: [26th Jan 2020]
+* [FIXED] Minor isuue in simple-navigation has been fixed. The class parameter now acts on buttons.
+
 
 !! Revision 1.7.1
 <<<

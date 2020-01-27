@@ -1,5 +1,5 @@
 created: 20190722142023425
-modified: 20200123200937784
+modified: 20200126143103699
 tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/utility/stylesheet/doc-svg
 type: text/css
@@ -10,4 +10,4 @@ height: 1.2em;
 vertical-align: middle;}
 
 .kk-ut-txt{
-min-width:50ch;}
+min-width:50%}
