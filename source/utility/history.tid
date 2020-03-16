@@ -1,8 +1,19 @@
 created: 20190930044127683
-modified: 20200210144750240
+modified: 20200316144117515
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
+
+!! Revision 2.0.0
+* Date: [16th Mar 2020]
+* [NEW] Admin mode changed to Author mode
+* [NEW] Shoutcut added to simply and seemlesly switch author-reader mode using `ctrl+alt+L`
+* [NEW] Disable page drop zone added to author/reader mode
+
+!! Revision 1.8.0
+* Date: [13th Mar 2020]
+* [NEW] Admin mode - Reader mode in Admin panel
+
 
 !! Revision 1.7.3
 * Date: [10th Feb 2020]

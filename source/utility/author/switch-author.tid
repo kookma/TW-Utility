@@ -1,0 +1,15 @@
+created: 20200315203327216
+key: ((switch-author))
+modified: 20200316130423198
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/kookma/utility/author/switch-author
+type: text/vnd.tiddlywiki
+
+\import $:/plugins/kookma/utility/author/tools
+
+<$reveal type=nomatch state=<<configTid>> text="">
+<<unhide-elements>>
+</$reveal>
+<$reveal type=match state=<<configTid>> text="" default="">
+<<hide-elements>>
+</$reveal>
