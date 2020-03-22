@@ -1,9 +1,10 @@
 created: 20190930044127683
-modified: 20200316152350541
+modified: 20200322194956479
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
 
+* ''2.1.0'' -- 2020.03.23 -- new simple transclusion output for fields macro
 * ''2.0.0'' -- 2020.03.16 -- new author-reader mode switch
 * ''1.8.0'' -- 2020.03.13 -- admin panel added
 * ''1.7.0'' -- 2020.02.23 -- show tiddler raw content including the macros on demand

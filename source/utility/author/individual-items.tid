@@ -1,6 +1,6 @@
 caption: Hide individual UI element
 created: 20200313141533701
-modified: 20200316144017594
+modified: 20200322130601872
 tags: 
 title: $:/plugins/kookma/utility/author/individual-items
 type: text/vnd.tiddlywiki
@@ -31,4 +31,4 @@ Select individual items to hide in reader mode.
 <$checkbox tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions" field=text checked=show unchecked=hide default=show /> Show more actions button in the tiddler toolbar
 
 ! Other items
-<$checkbox tiddler="$:/config/PageDropzone/Enable" field=text checked=no unchecked=yes default=yes /> Disable page dropzone
+<$checkbox tiddler="$:/config/DragAndDrop/Enable" field=text checked=no unchecked=yes default=yes /> Disable page dropzone

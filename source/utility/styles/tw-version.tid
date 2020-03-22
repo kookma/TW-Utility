@@ -1,9 +1,3 @@
-created: 20180906042308596
-modified: 20200123200937771
-tags: kookma $:/tags/Stylesheet
-title: $:/plugins/kookma/utility/stylesheet/tw-version
-type: application/x-tiddler
-
 <pre>/* TW-version added to site title */
 .tc-site-title:before {
   content:"TW <<version>>";

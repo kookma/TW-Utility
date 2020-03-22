@@ -1,51 +1,14 @@
 created: 20190930044127683
-modified: 20191111154126185
+modified: 20200322194049962
 tags: 
 title: $:/plugins/kookma/utility/readme
 type: text/vnd.tiddlywiki
 
-!! Utility plugin
-<<<
-The utility plugin is a collection of macros, styles, templates provides tools for better and simpler documentation. 
-<<<
+; Utility plugin
+The utility plugin objective is to provide set of tools for developers and authors. These tools includes simple transclusions, show raw contents of tiddlers, author tools, wikitext macros, show fields in view mode, ...
 
-!! Demo and tutorial
-<<<
-For detailed description of Utility plugin tools and demo have a look at
+; Code and demo
+For learning plugin features, syntax, tutorial and examples see the plugin demo and code pages
 
-https://kookma.github.io/TW-Utility/
-<<<
-
-!! Contents
-<<<
-Utility plugin includes the below tools
-
-* Macros
-** custom transclusion
-** doc-svg
-**  .lorem
-** show-macro
-** simple navigation
-** wikitext 
-
-* Styles
-** Colorful sidebar tab
-** Tiddlywiki version badge
-
-* Template
-** Show fields in view mode
-** Display global macro content
-
-* Snippets
-** wikitext macro
-<<<
-
-!! Utility settings tab
-<<<
-The Utility plugin has a settings tab under $:/ControlPanel, Settings tab, Utility tab. It allows to customize the behaviour of Utility plugin. A snapshot of Utility settings has been shown below.
-
-<<content $:/plugins/kookma/utility/ui/ControlPanel/Settings>>
-<<<
-
-!! Utility settings on sidebar
-Utility settings can be shown on the sidebar under tab `More`. To enable this feature simply open $:/ControlPanel, Settings tab, Utility tab and click the checkbox with `Show setting in more sidebar`.
+* Demo: https://kookma.github.io/TW-Utility/
+* Code: https://github.com/kookma/TW-Utility

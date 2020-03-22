@@ -1,6 +1,6 @@
 caption: Hide bulk of UI elements
 created: 20200313111922410
-modified: 20200316141809550
+modified: 20200322160845236
 title: $:/plugins/kookma/utility/author/tools
 type: text/vnd.tiddlywiki
 
@@ -32,7 +32,9 @@ type: text/vnd.tiddlywiki
 </$reveal>
 </$list>
 <!-- disable dropzone -->
-<$action-setfield $tiddler="$:/config/PageDropzone/Enable" $field="text" $value="no"/>
+<$list filter="[[$:/config/DragAndDrop/Enable]!tag[excluded]]" variable=ignore>
+<$action-setfield $tiddler="$:/config/DragAndDrop/Enable" $field="text" $value="no"/>
+</$list>
 \end
 
 \define unhide-elements()
@@ -51,7 +53,9 @@ type: text/vnd.tiddlywiki
 <!-- delete the configTid -->
 <$action-deletetiddler $tiddler=<<configTid>>/>
 <!-- enable dropzone -->
-<$action-deletetiddler $tiddler="$:/config/PageDropzone/Enable"/>
+<$list filter="[[$:/config/DragAndDrop/Enable]!tag[excluded]]" variable=ignore>
+<$action-deletetiddler $tiddler="$:/config/DragAndDrop/Enable"/>
+</$list>
 \end
 
 <$reveal type=nomatch state=<<configTid>> text="">
