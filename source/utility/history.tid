@@ -1,9 +1,10 @@
 created: 20190930044127683
-modified: 20200323070922992
+modified: 20200325125712462
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
 
+* ''2.1.1'' -- 2020.03.25 -- page control button improved and minor issues in css fixed
 * ''2.1.0'' -- 2020.03.23 -- new transclusion output for fields macro and disable drag and drop globally
 * ''2.0.0'' -- 2020.03.16 -- new author-reader mode switch
 * ''1.8.0'' -- 2020.03.13 -- admin panel added

@@ -1,5 +1,5 @@
 created: 20190930050545887
-modified: 20200322092225708
+modified: 20200324201449425
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macro/transclusion
 type: text/vnd.tiddlywiki
@@ -33,10 +33,10 @@ type: text/vnd.tiddlywiki
 </style>
 <$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
 <$link to=<<selected-tiddler>>/>
-<$list filter='[is[current]fields[]] -[enlist[text title created modified tags creator modifier]] +[limit[1]]' variable="ignore"><!--check if there is any user field -->
+<$list filter='[<selected-tiddler>fields[]] -[enlist[text title created modified tags creator modifier]] +[limit[1]]' variable="ignore"><!--check if there is any user field -->
 <table class="kk-utility-tbl-borderless">
-<$list filter='[is[current]fields[]] -[enlist[text title created modified tags creator modifier]]' variable="fld">
-<tr><td style="text-align:right"><<fld>>:</td><td><$text text={{{[get<fld>]}}}/></td></tr>
+<$list filter='[<selected-tiddler>fields[]] -[enlist[text title created modified tags creator modifier]]' variable="fld">
+<tr><td style="text-align:right"><<fld>>:</td><td><$text text={{{[<selected-tiddler>get<fld>]}}}/></td></tr>
 </$list>
 </table>
 </$list>
