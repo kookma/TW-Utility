@@ -1,7 +1,7 @@
 created: 20181010162537613
 description: Toggle field handling in view mode
 list-after: $:/core/ui/ViewTemplate/tags
-modified: 20200325145312086
+modified: 20200403082439483
 tags: 
 title: $:/plugins/kookma/utility/viewtemplate/view-fields
 type: text/vnd.tiddlywiki
