@@ -1,6 +1,5 @@
 created: 20190317174614898
-description: This is a customized version of `show-macro` used in TW-Yazd. This macro is used to display the macro codes in specified place.
-modified: 20200123200937632
+modified: 20201130152604002
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macro/show-macro
 type: application/x-tiddler
@@ -16,4 +15,5 @@ type: application/x-tiddler
   begin="\define"
   end="\end"
   output="disp-macro-contents"/>
+</$set>
 \end

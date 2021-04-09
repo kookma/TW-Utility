@@ -1,9 +1,10 @@
 created: 20190930044127683
-modified: 20200403062039433
+modified: 20210409142806322
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
 
+* ''2.1.4'' -- 2021.04.09 -- new viewtemplate for show fields used
 * ''2.1.2'' -- 2020.04.03 -- page control button issue fixed
 * ''2.1.1'' -- 2020.03.25 -- page control button improved and minor issues in css fixed
 * ''2.1.0'' -- 2020.03.23 -- new transclusion output for fields macro and disable drag and drop globally
