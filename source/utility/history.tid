@@ -1,9 +1,10 @@
 created: 20190930044127683
-modified: 20210520143148996
+modified: 20220706071528699
 tags: 
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
 
+* ''2.1.6'' -- 2022.07.06 -- bug fixes, update to Tiddlywiki 5.2.2
 * ''2.1.6'' -- 2021.05.20 -- bug fixes, new state tiddler for view fields
 * ''2.1.4'' -- 2021.04.09 -- new viewtemplate for show fields used
 * ''2.1.2'' -- 2020.04.03 -- page control button issue fixed
