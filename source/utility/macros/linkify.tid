@@ -1,0 +1,13 @@
+created: 20220710131053669
+modified: 20220710131718430
+tags: $:/tags/Macro
+title: $:/plugins/kookma/utility/macros/linkify
+type: text/vnd.tiddlywiki
+
+\define linkify(tiddler:"", field:"caption")
+<$link to=<<__tiddler__>> >
+<$view tiddler=<<__tiddler__>> field=<<__field__>> >
+<$view tiddler=<<__tiddler__>> field="title" />
+</$view>
+</$link>
+\end

@@ -1,0 +1,15 @@
+created: 20190317174614898
+modified: 20220712171611562
+tags: $:/tags/Macro
+title: $:/plugins/kookma/utility/macros/show-macro
+type: text/vnd.tiddlywiki
+
+\define show-macro(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+<$macrocall $name='find'
+  text={{{[<selected-tiddler>get[text]]}}}
+  begin="\define"
+  end="\end"
+  output="disp-macro-contents"/>
+</$set>
+\end

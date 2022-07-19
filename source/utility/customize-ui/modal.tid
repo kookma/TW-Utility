@@ -1,0 +1,12 @@
+caption: Customize UI elements
+created: 20220718180953381
+modified: 20220719061637220
+tags: 
+title: $:/plugins/kookma/utility/customize-ui/modal
+type: text/vnd.tiddlywiki
+
+''Show/hide selected UI elements''
+
+<div class="tc-control-panel">
+<$macrocall $name="tabs" tabsList="[all[shadows+tiddlers]tag[$:/tags/ControlPanel/Toolbars]!has[draft.of]] [all[shadows+tiddlers]tag[$:/tags/Utility/UI]!has[draft.of]]" default="$:/core/ui/ControlPanel/Toolbars/ViewToolbar" class="tc-vertical" explicitState="$:/state/tabs/controlpanel/toolbars-1345989671"/>
+</div>

@@ -1,0 +1,17 @@
+created: 20181010162537613
+description: Toggle field handling in view mode
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20220710052646061
+tags: $:/tags/ViewTemplate
+title: $:/plugins/kookma/utility/viewtemplates/view-fields
+type: text/vnd.tiddlywiki
+
+<$reveal type=match stateTiddler stateTitle="$:/state/utility/view-fields" stateField=text default="hide" text=show tag=div class="kk-ut-viewfields">
+<$vars newFieldNameTiddler=<<qualify "$:/temp/NewFieldName">>
+newFieldValueTiddler=<<qualify "$:/temp/NewFieldValue">>  
+searchListState=<<qualify "$:/temp/searchListState">> 
+storeTitle=<<qualify "$:/temp/storeTitle">> 
+>
+<$transclude tiddler="$:/core/ui/EditTemplate/fields"/>
+</$vars>
+</$reveal>

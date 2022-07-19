@@ -1,0 +1,13 @@
+created: 20220710131905827
+modified: 20220710170129455
+tags: $:/tags/Macro
+title: $:/plugins/kookma/utility/macros/docit
+type: text/vnd.tiddlywiki
+
+\define docit()
+<div class="alert alert-danger">
+''To Be Documented''. Created on <$view field=created format=date template="YYYY.0MM.0DD"/>
+</div>
+\end
+
+

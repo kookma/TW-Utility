@@ -1,0 +1,8 @@
+caption: Code
+created: 20220712171754435
+modified: 20220712171923579
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/kookma/utility/snippet/code-macro
+type: text/vnd.tiddlywiki
+
+ <<code src:"" language:"xml" title:"">>

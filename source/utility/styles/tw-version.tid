@@ -1,0 +1,14 @@
+created: 20180906042308596
+modified: 20220708194146038
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/utility/styles/tw-version
+type: text/vnd.tiddlywiki
+
+/* TW-version added to site title */
+.tc-site-title:before {
+  content:"TW <<version>>";
+  position:absolute;
+  margin-top:-1.9em;
+  color:silver;
+  font-size:13px;
+}

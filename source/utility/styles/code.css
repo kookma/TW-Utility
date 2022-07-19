@@ -1,0 +1,40 @@
+figure.kk-utility-fig {
+	/* for future use*/
+	margin-left:0;
+	margin-right:0;
+}
+
+/*figcaption structure */
+figure.kk-utility-fig figcaption {
+	padding: 4.5px 7.5px 7.5px 7.5px;;
+	border-top-left-radius:  3px;
+	border-top-right-radius: 3px;
+	margin-bottom: -3px;
+}
+
+/* figcaption skin: colors */
+figure.kk-utility-fig figcaption{
+	opacity: 0.7;
+	background-color:black;
+	color:white;
+}
+
+/* correct the style of codeblock pre element  */
+figure.kk-utility-fig pre{
+	margin-top:0;
+	/*	used to have inner top border straight */
+	/*	border-top-left-radius:  0;  
+	border-top-right-radius: 0; */
+}
+
+
+/* the code block and copy-to-clipboard button */
+.kk-utility-code{
+	position:  relative;
+}
+
+.kk-utility-copy-btn{
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}

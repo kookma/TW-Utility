@@ -1,0 +1,5 @@
+/* view feilds area */
+.kk-ut-viewfields { /* prevents overlapping with other elements */
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
