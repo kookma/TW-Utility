@@ -1,5 +1,5 @@
 created: 20190317174614898
-modified: 20220712171611562
+modified: 20220720070435918
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macros/show-macro
 type: text/vnd.tiddlywiki
@@ -12,4 +12,8 @@ type: text/vnd.tiddlywiki
   end="\end"
   output="disp-macro-contents"/>
 </$set>
+\end
+
+\define disp-macro-contents(p)
+<pre>\define<$text text=<<__p__>> />\end</pre>
 \end
