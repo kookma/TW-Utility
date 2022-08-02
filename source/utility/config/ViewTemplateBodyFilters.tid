@@ -1,9 +1,0 @@
-code-body: yes
-created: 20211228081847485
-list-after: $:/config/ViewTemplateBodyFilters/hide-body
-modified: 20220713145107608
-tags: $:/tags/ViewTemplateBodyFilter
-title: $:/plugins/kookma/utility/config/ViewTemplateBodyFilters
-type: text/vnd.tiddlywiki
-
-[tag[$:/tags/Stylesheet]then[$:/plugins/kookma/utility/viewtemplates/stylesheet]]

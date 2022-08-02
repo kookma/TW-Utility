@@ -1,7 +1,0 @@
-created: 20211228081325894
-modified: 20220710052726469
-tags: 
-title: $:/plugins/kookma/utility/viewtemplates/stylesheet
-type: text/vnd.tiddlywiki
-
-<$codeblock language=css code={{!!text}} />

@@ -1,5 +1,5 @@
 created: 20220711163148385
-modified: 20220713143723930
+modified: 20220722055638530
 tags: 
 title: $:/plugins/kookma/utility/macros/reveal-code
 type: text/vnd.tiddlywiki
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 </details>
 \end
 <!-- Used as viewTemplate see:$:/plugins/kookma/utility/viewtemplates/reveal-code -->
-<$set name=revealFilter tiddler="$:/plugins/kookma/utility/config/reveal-filter" field=text>
+<$set name=revealFilter tiddler="$:/config/Utility/Reveal-code-filter" field=text>
 <$let systemFilter={{{ [[$:/config/ViewTemplateBodyFilters/system]get[text]split[+]butlast[]] }}}
       showFilter  ="[all[current]tag[show-content]]
                     [all[current]tag[$:/tags/EditTemplate]]
@@ -19,14 +19,15 @@ type: text/vnd.tiddlywiki
                     [all[current]tag[$:/tags/Macro]!prefix[$:/core]]
                     [all[current]subfilter<revealFilter>]"
       stylesFilter="[all[current]tag[$:/tags/Stylesheet]] [type[text/css]]"
+			hasCodebody ="[all[current]field:code-body[yes]]"
 >
 <!-- Tiddlers with reveal code button at the tiddler bottom by default code is hidden-->
-<$list filter="[all[current]] -[subfilter<systemFilter>] -[subfilter<showFilter>] -[subfilter<stylesFilter>] +[limit[1]]">
-<<reveal-tiddler-code title:Code>>
+<$list filter="[all[current]] -[subfilter<systemFilter>] -[subfilter<showFilter>] -[subfilter<stylesFilter>] -[subfilter<hasCodebody>] +[limit[1]]">
+<<reveal-tiddler-code title:"Code">>
 </$list>
 <!-- Tiddlers with reveal code button at the tiddler bottom by default code is shown-->
 <$list filter="[subfilter<showFilter>] +[limit[1]]">
-  <<reveal-tiddler-code title: Code status:open>>
+  <<reveal-tiddler-code title:"Code" status:"open">>
 </$list>
 </$let>
 </$set>

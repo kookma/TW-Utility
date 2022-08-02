@@ -1,5 +1,5 @@
 created: 20220714070826639
-modified: 20220719063451092
+modified: 20220720183739439
 tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/utility/reader-mode/styles
 type: text/vnd.tiddlywiki
@@ -24,7 +24,7 @@ button.$title$, .tc-drop-down button.$title$, div.$title$
 }
 \end
 
-\define hide-other-controls()
+\define hide-user-selected-controls()
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fcontrol-panel>>,
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fsave-wiki>>,
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Finfo>>,
@@ -41,5 +41,5 @@ button.$title$, .tc-drop-down button.$title$, div.$title$
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline macrocallblock
 
 <<hide-edit-controls>>
-<<hide-other-controls>>
+<<hide-user-selected-controls>>
 </$reveal>
