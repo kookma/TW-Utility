@@ -2,7 +2,7 @@ caption: {{$:/plugins/kookma/utility/images/view-fields.svg}} {{$:/language/Butt
 created: 20181010190533135
 description: Show a toggle button for view fields
 list-before: $:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette
-modified: 20220706064239696
+modified: 20220821164028149
 tags: $:/tags/PageControls
 title: $:/plugins/kookma/utility/ui/Buttons/ViewFields
 type: text/vnd.tiddlywiki

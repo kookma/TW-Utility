@@ -32,9 +32,19 @@ figure.kk-utility-fig pre{
 .kk-utility-code{
 	position:  relative;
 }
+/* pretty display the empty code block */
+.kk-utility-code pre code{
+	min-height:30px; 
+}
 
 .kk-utility-copy-btn{
 	position: absolute;
 	top: 3px;
 	right: 5px;
+	opacity: 0.3;
+}
+
+.kk-utility-copy-btn:hover{
+    transition: opacity 200ms ease-in-out;
+    opacity: 1;
 }

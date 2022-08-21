@@ -1,6 +1,6 @@
 created: 20200315203327216
 key: ((switch-reader-mode))
-modified: 20220718185241018
+modified: 20220821153657520
 tags: $:/tags/KeyboardShortcut
 title: $:/plugins/kookma/utility/reader-mode/switch-actions
 type: text/vnd.tiddlywiki
@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 <!-- hide third party plugin sidebar tabs: first check if tab is exist -->
 <$list filter="""
  $:/plugins/kookma/trashbin/sidebar-tab 
- $:/plugins/kookma/favorites/sidebar-tab
+ $:/plugins/kookma/favorites/ui/sidebar/active-tab
  +[is[shadow]]
  """>
 <$action-listops $tiddler=<<currentTiddler>> $field=tags $subfilter="+[toggle[$:/tags/SideBar]]"/>

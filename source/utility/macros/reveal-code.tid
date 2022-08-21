@@ -1,5 +1,5 @@
 created: 20220711163148385
-modified: 20220722055638530
+modified: 20220821154435311
 tags: 
 title: $:/plugins/kookma/utility/macros/reveal-code
 type: text/vnd.tiddlywiki
@@ -19,7 +19,7 @@ type: text/vnd.tiddlywiki
                     [all[current]tag[$:/tags/Macro]!prefix[$:/core]]
                     [all[current]subfilter<revealFilter>]"
       stylesFilter="[all[current]tag[$:/tags/Stylesheet]] [type[text/css]]"
-			hasCodebody ="[all[current]field:code-body[yes]]"
+      hasCodebody ="[all[current]field:code-body[yes]]"
 >
 <!-- Tiddlers with reveal code button at the tiddler bottom by default code is hidden-->
 <$list filter="[all[current]] -[subfilter<systemFilter>] -[subfilter<showFilter>] -[subfilter<stylesFilter>] -[subfilter<hasCodebody>] +[limit[1]]">
