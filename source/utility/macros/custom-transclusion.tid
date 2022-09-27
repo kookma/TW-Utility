@@ -1,0 +1,38 @@
+tags: $:/tags/Macro
+title: $:/plugins/kookma/utility/macros/custom-transclusion
+type: text/vnd.tiddlywiki
+
+\define code-link(tiddler, caption)
+<div style="margin-top:10px;">
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+
+<$link to=<<selected-tiddler>>/>
+
+<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption=<<__caption__>>/>
+</$set>
+</div>
+\end
+
+\define content(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+<$link to=<<selected-tiddler>>/>
+<$transclude tiddler=<<selected-tiddler>> mode="block"/>
+</$set>
+\end
+
+\define description(tiddler)
+<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
+<dl><dt><$link to=<<selected-tiddler>>/></dt><dd><$transclude tiddler=<<selected-tiddler>> field="description"/></dd></dl>
+</$set>
+\end
+
+\define fields(tiddler)
+<$tiddler  tiddler={{{[<__tiddler__>get[title]else<currentTiddler>]}}} >
+<$link/>
+<table class="kk-utility-tbl-borderless">
+<$list filter='[<currentTiddler>fields:exclude[text title created modified tags creator modifier type revision bag]]' variable=fld emptyMessage='<tr><td>no fields</td></tr>'>
+<tr><td style="text-align:right"><<fld>>:</td><td><$text text={{{[<currentTiddler>get<fld>]}}}/></td></tr>
+</$list>
+</table>
+</$tiddler>
+\end

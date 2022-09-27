@@ -1,7 +1,5 @@
 author: Jeremy Ruston
-created: 20200210134515855
 description: creates a unique id for permanent state tiddler
-modified: 20220710131718668
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macros/unique-id
 type: text/vnd.tiddlywiki

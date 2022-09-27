@@ -3,3 +3,7 @@
 	margin-top: 12px;
 	margin-bottom: 12px;
 }
+/* in simple transclusion for fields */
+.kk-utility-tbl-borderless, 
+.kk-utility-tbl-borderless tr,
+.kk-utility-tbl-borderless td{border:0;}
