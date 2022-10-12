@@ -1,3 +1,4 @@
+\define find(text, begin, end, output: "simple", mode:"all")
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macros/find
 type: application/x-tiddler

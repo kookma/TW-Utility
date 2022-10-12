@@ -1,13 +1,3 @@
-\define show-macro(tiddler)
-<$set name=selected-tiddler value="$tiddler$" emptyValue=<<currentTiddler>> >
-<$macrocall $name='find'
-  text={{{[<selected-tiddler>get[text]]}}}
-  begin="\define"
-  end="\end"
-  output="disp-macro-contents"/>
-</$set>
-\end
-
 \define disp-macro-contents(p)
 <pre>\define<$text text=<<__p__>> />\end</pre>
 \end

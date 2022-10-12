@@ -1,5 +1,4 @@
 caption: Utility
-list-after: $:/core/ui/ControlPanel/Settings/TiddlyWiki
 tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
 title: $:/plugins/kookma/utility/ui/ControlPanel/Settings
 type: text/vnd.tiddlywiki

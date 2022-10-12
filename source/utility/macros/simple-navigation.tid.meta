@@ -1,3 +1,4 @@
+\define simple-navigation(tag: "demo", class, close:"no")
 tags: $:/tags/Macro
 title: $:/plugins/kookma/utility/macros/simple-navigation
 type: application/x-tiddler
