@@ -2,7 +2,7 @@ tags:
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
 
-* ''2.3.2'' -- 2022.09.27 -- bug fixes.
+* ''2.3.3'' -- 2022.10.24 -- bug fixes.
 * ''2.3.0'' -- 2022.08.02 -- new macros, update to Tiddlywiki 5.2.3
 * ''2.1.6'' -- 2022.07.06 -- bug fixes, update to Tiddlywiki 5.2.2
 * ''2.1.6'' -- 2021.05.20 -- bug fixes, new state tiddler for view fields
