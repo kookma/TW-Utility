@@ -1,5 +1,5 @@
 description: makes storyriver centered when sidebar is closed
-tags: $:/tags/Stylesheet
+tags: 
 title: $:/plugins/kookma/utility/styles/centered-storyriver
 type: text/vnd.tiddlywiki
 
