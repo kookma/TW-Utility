@@ -13,6 +13,7 @@ These settings let you customise the behaviour of Utility plugin.
 ;Options
 :<$checkbox tiddler="$:/plugins/kookma/utility/ui/Buttons/ViewFields" tag="$:/tags/PageControls"> Enable show fields</$checkbox>
 :<$checkbox tiddler="$:/plugins/kookma/utility/styles/tw-version" tag="$:/tags/Stylesheet"> Show the Tiddlywiki version badge</$checkbox>
+:<$checkbox tiddler="$:/plugins/kookma/utility/styles/centered-storyriver" tag="$:/tags/Stylesheet"> Center storyriver when sidebar closed</$checkbox>
 :<$checkbox tiddler="$:/plugins/kookma/utility/viewtemplates/reveal-code" tag="$:/tags/ViewTemplate"> Display code button at tiddler bottom</$checkbox><div style="padding-left:18px;">
 <$list filter="[[$:/plugins/kookma/utility/viewtemplates/reveal-code]tag[$:/tags/ViewTemplate]]" variable=ignore>
 Filter to show tiddler code (default to open) &nbsp; <$edit-text tiddler="$:/config/Utility/Reveal-code-filter" field="text" tag=input default="" placeholder="enter a filter e.g. [tag[myTag]] " class="kk-ut-txt"/>

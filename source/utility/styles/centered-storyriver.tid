@@ -1,0 +1,14 @@
+description: makes storyriver centered when sidebar is closed
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/utility/styles/centered-storyriver
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
+<$list filter="[[$:/state/sidebar]get[text]match[no]]" variable=null>
+:not([data-tiddler-title^="Draft of '"]).tc-tiddler-frame  {
+min-width: 600px;
+max-width: 50vw;
+margin-left: auto;
+margin-right: auto;
+}
+</$list>
