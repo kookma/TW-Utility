@@ -34,6 +34,7 @@ figure.kk-utility-fig pre{
 }
 /* pretty display the empty code block */
 .kk-utility-code pre code{
+	display: block;
 	min-height:30px; 
 }
 
