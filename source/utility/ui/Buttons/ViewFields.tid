@@ -5,7 +5,10 @@ tags: $:/tags/PageControls
 title: $:/plugins/kookma/utility/ui/Buttons/ViewFields
 type: text/vnd.tiddlywiki
 
+\whitespace trim
+
 \define stateTid() $:/state/utility/view-fields
+
 \define show-fields-button()
 \whitespace trim
 <$reveal type="nomatch" state=<<stateTid>> text="show" default="hide" tag=span>
@@ -29,6 +32,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define disp-on-pagecontrols() 
+\whitespace trim
 <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
 {{$:/plugins/kookma/utility/images/view-fields.svg}}  
 </$list>

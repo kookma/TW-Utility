@@ -1,8 +1,6 @@
 caption: {{$:/core/images/link}} {{$:/language/Buttons/DraggableHandle/Caption}}
-created: 20221128032812168
 description: {{$:/language/Buttons/DraggableHandle/Hint}}
 list-after: $:/core/ui/Buttons/more-tiddler-actions
-modified: 20230126125458847
 tags: $:/tags/ViewToolbar
 title: $:/plugins/kookma/utility/ui/Buttons/DraggableLink
 type: text/vnd.tiddlywiki

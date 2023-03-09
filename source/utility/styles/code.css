@@ -45,6 +45,11 @@ figure.kk-utility-fig pre{
 	fill:currentColor;
 }
 
+.tc-btn-invisible.kk-utility-copy-btn svg{
+width: 1.2em;
+height: 1.2em;
+}
+
 .kk-utility-copy-btn:hover{
     transition: opacity 200ms ease-in-out;
     opacity: 1;

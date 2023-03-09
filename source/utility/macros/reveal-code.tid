@@ -25,7 +25,7 @@ type: text/vnd.tiddlywiki
 <<reveal-tiddler-code title:"Code">>
 </$list>
 <!-- Tiddlers with reveal code button at the tiddler bottom by default code is shown-->
-<$list filter="[subfilter<showFilter>] +[limit[1]]">
+<$list filter="[subfilter<showFilter>] -[subfilter<hasCodebody>]  +[limit[1]]">
   <<reveal-tiddler-code title:"Code" status:"open">>
 </$list>
 </$let>
