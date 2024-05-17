@@ -5,21 +5,18 @@ title: $:/plugins/kookma/utility/viewtemplates/view-fields
 type: text/vnd.tiddlywiki
 
 <$reveal type=match stateTiddler stateTitle="$:/state/utility/view-fields" stateField=text default="hide" text=show tag=div class="kk-ut-viewfields">
-<$importvariables filter="[[$:/core/ui/EditTemplate]]">
-<!-- the above import required from TW5.2.3-->
-<$vars 
- newFieldNameTiddler=<<qualify "$:/temp/NewFieldName">>
- newFieldValueTiddlerPrefix=<<qualify "$:/temp/NewFieldValue">>
- newFieldNameInputTiddler=<<qualify "$:/temp/NewFieldName/input">>
- newFieldNameSelectionTiddler=<<qualify "$:/temp/NewFieldName/selected-item">>
- searchListState=<<qualify "$:/temp/searchListState">> 
- storeTitle=<<qualify "$:/temp/storeTitle">> 
+
+<$vars newFieldNameTiddler=<<qualify "$:/temp/NewFieldName">>
+newFieldValueTiddler=<<qualify "$:/temp/NewFieldValue">>  
+searchListState=<<qualify "$:/temp/searchListState">> 
+storeTitle=<<qualify "$:/temp/storeTitle">> 
 >
 <$transclude tiddler="$:/core/ui/EditTemplate/fields"/>
 </$vars>
-</$importvariables>
+
 </$reveal>
 
-<!-- IMPORTANT Note: This new viewtemplate works with TW 5.2.3+, do not use in TW 5.2.2 and older
-if so, your UI will crash. This is because of temp tiddlers.
+<!-- IMPORTANT Note: I had to use another viewtemplate for TW 5.2.3+, which do not use in TW 5.2.2 and older, but after 5.3.3
+I could use the old viewtemplate to show the fields!
+See: https://github.com/Jermolene/TiddlyWiki5/discussions/6803#discussioncomment-3190043
 -->

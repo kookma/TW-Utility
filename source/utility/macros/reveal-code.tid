@@ -13,9 +13,11 @@ type: text/vnd.tiddlywiki
 <$set name=revealFilter tiddler="$:/config/Utility/Reveal-code-filter" field=text>
 <$let systemFilter={{{ [[$:/config/ViewTemplateBodyFilters/system]get[text]split[+]butlast[]] }}}
       showFilter  ="[all[current]tag[show-content]]
+			              [all[current]tag[$:/tags/Global]]
+                    [all[current]tag[$:/tags/Macro]]
                     [all[current]tag[$:/tags/EditTemplate]]
                     [all[current]tag[$:/tags/ViewTemplate]] 
-                    [all[current]tag[$:/tags/Macro]!prefix[$:/core]]
+
                     [all[current]subfilter<revealFilter>]"
       stylesFilter="[all[current]tag[$:/tags/Stylesheet]] [type[text/css]]"
       hasCodebody ="[all[current]field:code-body[yes]]"

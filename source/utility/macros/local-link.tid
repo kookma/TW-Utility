@@ -1,0 +1,13 @@
+created: 20240126115848998
+creator: Mohammad
+modified: 20240201081020632
+modifier: Mohammad
+tags: $:/tags/Global
+title: $:/plugins/kookma/utility/macros/local-link
+type: text/vnd.tiddlywiki
+
+\procedure local(folder, label:"")
+<a href={{{ [<folder>addprefix[file:///]] }}} target=_blank>
+<%if [<label>trim[]is[blank]] %><<folder>><% else %><<label>><%endif%>
+</a>
+\end

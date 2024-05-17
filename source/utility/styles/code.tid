@@ -1,3 +1,7 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/utility/styles/code
+type: text/vnd.tiddlywiki
+
 figure.kk-utility-fig {
 	/* for future use*/
 	margin-left:0;
@@ -43,7 +47,7 @@ figure.kk-utility-fig pre{
 	top: 3px;
 	right: 5px;
 	opacity: 0.3;
-	fill:currentColor;
+/*	fill:currentColor;*/
 }
 
 .tc-btn-invisible.kk-utility-copy-btn svg{
