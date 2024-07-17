@@ -18,12 +18,12 @@ type: text/vnd.tiddlywiki
 
 <!-- permalink -->
 <$list filter="[<modifier>match[ctrl]]" variable=ignore>
-<$action-sendmessage $message="tm-permalink" param=<<currentTiddler>> />
+<$action-sendmessage $message="tm-permalink" param=<<currentTiddler>> successNotification="$:/language/Buttons/DraggableHandle/Permlink"/>
 </$list>
 
 <!-- permaview -->
 <$list filter="[<modifier>match[shift]]" variable=ignore>
-<$action-sendmessage $message="tm-permaview" param=<<currentTiddler>> />
+<$action-sendmessage $message="tm-permaview" param=<<currentTiddler>> successNotification="$:/language/Buttons/DraggableHandle/Permview"/>
 </$list>
 
 \end
