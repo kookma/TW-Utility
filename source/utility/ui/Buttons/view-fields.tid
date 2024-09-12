@@ -1,0 +1,28 @@
+caption: {{$:/plugins/kookma/utility/images/view-fields.svg}} {{$:/language/Buttons/Utility/Caption}}
+description: Show a toggle button for view fields
+list-before: $:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette
+tags: $:/tags/PageControls
+title: $:/plugins/kookma/utility/ui/Buttons/view-fields
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\procedure stateTid() $:/state/utility/view-fields
+
+\procedure control-panel-button(status, class)
+\whitespace trim
+	<$button set=<<stateTid>> setTo=<<status>> tooltip={{$:/language/Buttons/Utility/Hint}} aria-label={{$:/language/Buttons/Utility/Caption}} class=`$(tv-config-toolbar-class)$ $(class)$` >
+			<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+					{{$:/plugins/kookma/utility/images/view-fields.svg}}  
+			</$list>
+			<$list filter="[<tv-config-toolbar-text>match[yes]]">
+					<span class="tc-btn-text"><$text text={{$:/language/Buttons/Utility/Caption}}/></span>
+			</$list>
+	</$button>
+\end	
+
+
+<%if [<stateTid>get[text]match[show]] %>
+	<<control-panel-button status:"hide" class:"tc-selected">>
+<%else%>
+	<<control-panel-button status:"show">>
+<%endif%>

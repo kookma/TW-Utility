@@ -1,8 +1,0 @@
-caption: Wikitext-example macrocall
-tags: $:/tags/TextEditor/Snippet
-title: $:/plugins/kookma/utility/snippets/wikitext-example-macrocall
-type: text/vnd.tiddlywiki
-
-<$macrocall $name="wikitext-example" 
-src="""
-"""/>

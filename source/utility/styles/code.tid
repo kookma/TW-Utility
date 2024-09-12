@@ -10,7 +10,7 @@ figure.kk-utility-fig {
 
 /*figcaption structure */
 figure.kk-utility-fig figcaption {
-	padding: 4.5px 7.5px 7.5px 7.5px;;
+	padding: 4.5px 7.5px 7.5px 7.5px;
 	border-top-left-radius:  3px;
 	border-top-right-radius: 3px;
 	margin-bottom: -3px;

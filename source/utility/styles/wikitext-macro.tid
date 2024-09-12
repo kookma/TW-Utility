@@ -21,11 +21,3 @@ type: text/vnd.tiddlywiki
 .doc-example pre:first-child {
 	margin-top: 0;
 }
-
-
-
-
-
-
-
-

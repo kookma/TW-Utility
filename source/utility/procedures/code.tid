@@ -1,0 +1,18 @@
+tags: $:/tags/Global
+title: $:/plugins/kookma/utility/procedures/code
+type: text/vnd.tiddlywiki
+
+\procedure code(src:"", language:"xml", caption:"")
+<$let code={{{  [<src>is[tiddler]get[text]]  [<src>is[blank]then{!!text}else<src>] }}} >
+	<figure class="kk-utility-fig">
+		<%if [<caption>!is[blank]] %><figcaption><<caption>></figcaption><%endif%>
+		<div class="kk-utility-code">
+			<$button class="tc-btn-invisible kk-utility-copy-btn" tooltip={{$:/language/Buttons/CopyToClipboard/Hint}} >
+					{{$:/core/images/copy-clipboard}}
+					<$action-sendmessage $message="tm-copy-to-clipboard" $param=<<code>> successNotification="$:/language/Utility/Notifications/Source/CopiedToClipboard/Succeeded"/>					 
+			</$button>
+			<$codeblock language=<<language>> code=<<code>> />
+		</div>
+	</figure>
+</$let>
+\end code

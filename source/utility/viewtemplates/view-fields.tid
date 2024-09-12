@@ -4,7 +4,7 @@ tags: $:/tags/ViewTemplate
 title: $:/plugins/kookma/utility/viewtemplates/view-fields
 type: text/vnd.tiddlywiki
 
-<$reveal type=match stateTiddler stateTitle="$:/state/utility/view-fields" stateField=text default="hide" text=show tag=div class="kk-ut-viewfields">
+<$reveal type=match stateTitle="$:/state/utility/view-fields" stateField=text default="hide" text=show tag=div class="kk-ut-viewfields">
 
 <$vars newFieldNameTiddler=<<qualify "$:/temp/NewFieldName">>
 newFieldValueTiddler=<<qualify "$:/temp/NewFieldValue">>  

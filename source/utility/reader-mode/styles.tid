@@ -3,11 +3,9 @@ title: $:/plugins/kookma/utility/reader-mode/styles
 type: text/vnd.tiddlywiki
 
 <!-- this tiddler is a modified $:/plugins/tiddlywiki/tiddlyweb/readonly from Tiddlyweb plugin -->
-\define button-selector(title)
-button.$title$, .tc-drop-down button.$title$, div.$title$
-\end
+\procedure button-selector(title) <$text text=`button.$(title)$, .tc-drop-down button.$(title)$, div.$(title)$` />
 
-\define hide-edit-controls()
+\procedure hide-edit-controls()
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone>>,
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete>>,
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit>>,
@@ -22,7 +20,7 @@ button.$title$, .tc-drop-down button.$title$, div.$title$
 }
 \end
 
-\define hide-user-selected-controls()
+\procedure hide-user-selected-controls()
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fcontrol-panel>>,
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fsave-wiki>>,
 <<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Finfo>>,
