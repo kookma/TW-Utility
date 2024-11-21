@@ -23,7 +23,7 @@ type: text/vnd.tiddlywiki
 \define show-tiddler-source(open:"")
 <details  title="Show/hide tiddler source" class="kk-utility-details" $open$>
 <summary>Source</summary>
-<$transclude $variable="code" language="xml" src={{!!text}} />
+<$transclude $variable="code" language={{{ [{!!title}get[type]else[text/vnd.tiddlywiki]] }}} src={{!!text}} />
 </details>
 \end
 
