@@ -2,6 +2,7 @@ tags:
 title: $:/plugins/kookma/utility/history
 type: text/vnd.tiddlywiki
 
+* ''3.1.0'' -- 2024.11.21 -- Update to TiddlyWiki 5.3.6 and added custom codeblock
 * ''3.0.1'' -- 2024.09.11 -- built with Gatha-Thirdflow, and revert the view template of version 2.8.1
 * ''3.0.0'' -- 2024.07.18 -- updated to TiddlyWiki 5.3.5, some features moved to Shiraz
 

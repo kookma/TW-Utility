@@ -1,6 +1,6 @@
 {
     "title": "$:/plugins/kookma/utility",
-    "version": "3.0.2",
+    "version": "3.1.0",
     "stability": "STABILITY_2_STABLE",
     "name": "Utility",
     "description": "Small tools for authors and developers",
@@ -12,5 +12,5 @@
     "dependents": "",
     "plugin-type": "plugin",
     "core-version": ">5.3.5",
-    "packaged-by": "Gatha on 14th November 2024, 22:23:34"
+    "packaged-by": "Gatha on 21st November 2024, 16:13:53"
 }

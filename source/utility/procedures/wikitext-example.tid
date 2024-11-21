@@ -4,7 +4,6 @@ type: text/vnd.tiddlywiki
 
 \procedure wikitext-example(src)
 <div class="doc-example">
-	<$transclude $variable="copy-to-clipboard-above-right" src=<<src>>/>
 	<$codeblock code=<<src>>/>
 	<p>That renders as:</p>
 	<$transclude $variable="src" $mode="block"/>
@@ -13,7 +12,6 @@ type: text/vnd.tiddlywiki
 
 \procedure wikitext-example-with-html(src)
 <div class="doc-example">
-	<$transclude $variable="copy-to-clipboard-above-right" src=<<src>>/>
 	<$codeblock code=<<src>>/>
 	<p>That renders as:</p>
 	<$transclude $variable="src" $mode="block"/>
