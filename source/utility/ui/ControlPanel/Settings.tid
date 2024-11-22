@@ -23,16 +23,19 @@ These settings let you customise the behaviour of Utility plugin.
 
 
 ;Options
-:<$checkbox tiddler="$:/config/Stylesheet/Visibility/$:/plugins/kookma/utility/styles/tw-version" field="text" checked="show" unchecked="hide"> Show Tiddlywiki version badge</$checkbox>
-:<$checkbox tiddler="$:/config/EditTemplate/Visibility/$:/plugins/kookma/utility/edittemplates/tiddler-size" field="text" checked="show" unchecked="hide"> Show tiddler size information in edit mode</$checkbox>
-:<$checkbox tiddler="$:/config/ViewTemplate/Visibility/$:/plugins/kookma/utility/viewtemplates/import-select" field="text" checked="show" unchecked="hide"> Show select tiddlers menu on ''~$:/Import''</$checkbox>
+:<$checkbox tiddler="$:/config/Utility" index="tw-version" checked="show" unchecked="hide"> Show TiddlyWiki version badge</$checkbox>
+:<$checkbox tiddler="$:/config/Utility" index="extended-subtitle" checked="show" unchecked="hide"> Show extended tiddler subtitle</$checkbox>
+:<$checkbox tiddler="$:/config/Utility" index="tiddler-size-edit-mode" checked="show" unchecked="hide"> Show tiddler size information in edit mode</$checkbox>
+:<$checkbox tiddler="$:/config/Utility" index="import-select" checked="show" unchecked="hide"> Show select tiddlers menu on ''~$:/Import''</$checkbox>
+
 
 
 ;Source Toggle Button
-:<$checkbox tiddler="$:/config/ViewTemplate/Visibility/$:/plugins/kookma/utility/viewtemplates/source-toggle-button" field="text" checked="show" unchecked="hide"> Show source button on the tiddlers</$checkbox>
+:<$checkbox tiddler="$:/config/Utility" index="source-toggle-button" checked="show" unchecked="hide"> Show source button on the tiddlers</$checkbox>
+
 
 :<div style="padding-left:18px;">
-<%if [{$:/config/ViewTemplate/Visibility/$:/plugins/kookma/utility/viewtemplates/source-toggle-button}match[show]] %>
+<%if  [[$:/config/Utility]getindex[source-toggle-button]match[show]] %>
 <label class="kk-utility-label" title=<<help-exclude-reveal-filter>> >Exclude filter<sup>?</sup></label>
 <$edit-text tiddler="$:/config/Utility/SourceToggleButton/Exclude-filter" field="text" tag=input default="" placeholder="enter a filter e.g. [has:field[myField]] " class="kk-ut-txt"/><br>
 

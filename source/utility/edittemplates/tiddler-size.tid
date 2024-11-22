@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 \function .words() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>splitregexp[\n]splitregexp[\s+]count[]else[0]] [enlist<fieldnames>splitregexp[\s+]count[]else[0]] +[sum[]]
 \function .bytes() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>else[]length[]] [enlist<fieldnames>length[]else[0]] +[sum[]]
 
-<%if [{$:/config/EditTemplate/Visibility/$:/plugins/kookma/utility/edittemplates/tiddler-size}match[show]] %>
+<%if [[$:/config/Utility]getindex[tiddler-size-edit-mode]match[show]] %>
 	<$let popid={{{ [[$:/temp/TiddlyTools/Templates/Size/]addsuffix<currentTiddler>addsuffix<qualify>] }}} >
 		<$button class="tc-btn-invisible kk-utility-tiddlersize-btn" popup=<<popid>> tooltip="show field sizes">
 			 Tiddler text: <<.lines>> lines, <<.words>> words, <<.bytes>> bytes {{$:/core/images/down-arrow}} <!-- only text field statistics -->

@@ -84,7 +84,7 @@ Rename existing
 </div>
 \end rename-existing
 
-<%if [{$:/config/ViewTemplate/Visibility/$:/plugins/kookma/utility/viewtemplates/import-select}match[show]] [all[current]match[$:/Import]status[pending]] :and[count[]match[2]] %>
+<%if [[$:/config/Utility]getindex[import-select]match[show]] [all[current]match[$:/Import]status[pending]] :and[count[]match[2]] %>
 <<check-boxes>>
 <<rename-existing>>
 <%endif%>

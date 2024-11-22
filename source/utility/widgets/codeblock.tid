@@ -5,9 +5,11 @@ type: text/vnd.tiddlywiki
 \widget $codeblock(code, language, caption)
 <div class="kk-utility-code-caption"><<caption>></div>
 <div class="kk-utility-code">
+<%if [<code>!is[blank]] %>
 <$button message="tm-copy-to-clipboard" param=<<code>> tooltip="Copy" class="tc-btn-invisible">
 {{$:/core/images/copy-clipboard}}
 </$button>
+<%endif%>
 <$genesis $type="$codeblock" $remappable="no" code=<<code>> language=<<language>>/>
 </div>
 \end
