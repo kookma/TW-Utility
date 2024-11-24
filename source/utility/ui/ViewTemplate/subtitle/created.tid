@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 <%if [[$:/config/Utility]getindex[extended-subtitle]match[show]] %>
 <%if [{!!modifier}!is[blank]] %><br><%endif%>
 <%if [{!!modified}!is[blank]] %>
-<<doc-svg "$:/plugins/kookma/utility/images/clock-created.svg">> Created <$view field="created" format="date" template={{$:/language/Tiddler/DateFormat}}/><br>
-<<doc-svg "$:/plugins/kookma/utility/images/clock-updated.svg">> Updated 
+<<doc-svg "$:/plugins/kookma/utility/images/tiddler-created.svg">> Created <$view field="created" format="date" template={{$:/language/Tiddler/DateFormat}}/><br>
+<<doc-svg "$:/plugins/kookma/utility/images/tiddler-updated.svg">> Updated 
 <%endif%>
 <%endif%>

@@ -1,6 +1,0 @@
-library: svg-icon
-tags: 
-title: $:/plugins/kookma/utility/images/view-fields.svg
-type: text/vnd.tiddlywiki
-
-<svg class="tc-image-center-focus-strong tc-image-button" width="22pt" height="22pt" viewBox="0 0 36 36"><path d="M18 10c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zM4 24H0v8c0 2.21 1.79 4 4 4h8v-4H4v-8zM4 4h8V0H4C1.79 0 0 1.79 0 4v8h4V4zm28-4h-8v4h8v8h4V4c0-2.21-1.79-4-4-4zm0 32h-8v4h8c2.21 0 4-1.79 4-4v-8h-4v8z"/></svg>
