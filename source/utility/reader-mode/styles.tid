@@ -2,40 +2,40 @@ tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/utility/reader-mode/styles
 type: text/vnd.tiddlywiki
 
-<!-- this tiddler is a modified $:/plugins/tiddlywiki/tiddlyweb/readonly from Tiddlyweb plugin -->
-\procedure button-selector(title) <$text text=`button.$(title)$, .tc-drop-down button.$(title)$, div.$(title)$` />
+<!--
+This tiddler is inspired from Tiddlyweb plugin. See $:/plugins/tiddlywiki/tiddlyweb/readonly
+-->
+
+\rules only fnprocdef conditional commentblock macrocallinline
 
 \procedure hide-edit-controls()
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-here>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal-here>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fimport>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fmanager>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-image>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler>>{
+<$list filter="[{$:/config/utility/reader-mode}splitregexp[\n]!is[blank]!prefix[<!--]encodeuricomponent[]escapecss[]addprefix[button.tc-btn-]] :and[join[,]]">
+
+<<currentTiddler>>
+{
 	display: none;
 }
-\end
+</$list>
+\end hide-edit-controls
 
-\procedure hide-user-selected-controls()
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fcontrol-panel>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fsave-wiki>>,
-<<button-selector tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Finfo>>,
-<<button-selector tc-btn-\%24\%3A\%2Fplugins\%2Fkookma\%2Fcommander\%2Fbuttons\%2Fpagecontrol>>,
-<<button-selector tc-btn-\%24\%3A\%2Fplugins\%2Fkookma\%2Ftrashbin\%2Fui\%2Ftoolbar-button>>,
-<<button-selector tc-btn-\%24\%3A\%2Fplugins\%2Fkookma\%2Ffavorites\%2Fui\%2Fbuttons\%2Fadd-remove>>,
-<<button-selector tc-btn-\%24\%3A\%2Fplugins\%2Fkookma\%2Futility\%2Fui\%2FButtons\%2FViewFields>> {
-	display: none;
+\procedure immersive-reader-mode()
+<%if [[$:/config/Utility]getindex[immersive-reader]match[yes]] %>
+
+.tc-tiddler-controls
+   button:not(.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclose)
+{
+	display:none;
 }
-\end
+.tc-show-sidebar-btn, .tc-hide-sidebar-btn {
+	display:none;
+}
+<%endif%>
+\end immersive-reader-mode
 
-<$reveal state="$:/status/IsReaderMode" type="match" text="yes" default="no"> <!-- by default reader mode is off -->
-
-\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline macrocallblock
+<!-- By default reader mode is off -->
+<%if [[$:/config/utility/IsReaderMode]get[text]else[no]match[yes]] %>
 
 <<hide-edit-controls>>
-<<hide-user-selected-controls>>
-</$reveal>
+<<immersive-reader-mode>>
+<%endif%>
+

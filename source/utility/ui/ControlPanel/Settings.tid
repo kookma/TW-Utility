@@ -27,7 +27,8 @@ These settings let you customise the behaviour of Utility plugin.
 :<$checkbox tiddler="$:/config/Utility" index="extended-subtitle" checked="show" unchecked="hide"> Show extended tiddler subtitle</$checkbox>
 :<$checkbox tiddler="$:/config/Utility" index="tiddler-size-edit-mode" checked="show" unchecked="hide"> Show tiddler size information in edit mode</$checkbox>
 :<$checkbox tiddler="$:/config/Utility" index="import-select" checked="show" unchecked="hide"> Show select tiddlers menu on ''~$:/Import''</$checkbox>
-
+:<$checkbox tiddler="$:/config/Utility" index="toolbar-controls-on-shadows" checked="show" unchecked="hide"> Show toolbar controls on shadow tiddlers</$checkbox>
+:<$checkbox tiddler="$:/config/Utility" index="immersive-reader" checked="yes"> Enter immersive reader mode</$checkbox>
 
 
 ;Source Toggle Button

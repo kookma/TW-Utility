@@ -2,8 +2,9 @@ tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/utility/styles/tw-version
 type: text/vnd.tiddlywiki
 
-\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline conditional
+ \rules only commentblock conditional macrocallinline
 <%if [[$:/config/Utility]getindex[tw-version]match[show]] %>
+
 /* TW-version added to site title */
 .tc-site-title:before {
   content:"TW <<version>>";
@@ -12,4 +13,5 @@ type: text/vnd.tiddlywiki
   color:<<color sidebar-foreground>>;
   font-size:13px;
 }
+
 <%endif%>

@@ -4,7 +4,7 @@ title: $:/plugins/kookma/utility/reader-mode/switch-actions
 type: text/vnd.tiddlywiki
 
 <!-- Toggle reader mode status tiddler: Used in  $:/plugins/kookma/utility/styles/reader-mode-->
-<$action-listops $tiddler="$:/status/IsReaderMode" $field=text $subfilter="+[toggle[yes]]"/>
+<$action-listops $tiddler="$:/config/utility/IsReaderMode" $field=text $subfilter="+[toggle[yes],[no]]"/>
 
 
 <!-- hide core sidebar tabs -->
@@ -16,6 +16,7 @@ type: text/vnd.tiddlywiki
 <$list filter="""
  $:/plugins/kookma/trashbin/sidebar-tab 
  $:/plugins/kookma/favorites/ui/sidebar/active-tab
+ $:/plugins/kookma/narenj/ui/side-editor
  +[is[shadow]]
  """>
 <$action-listops $tiddler=<<currentTiddler>> $field=tags $subfilter="+[toggle[$:/tags/SideBar]]"/>
@@ -25,3 +26,18 @@ type: text/vnd.tiddlywiki
 
 <!-- disable drag and drop -->
 <$action-listops $tiddler="$:/config/DragAndDrop/Enable" $field=text $subfilter="+[toggle[no]]"/>
+
+<!-- in Immersive Reader mode, if TW-Tweaks is present, center the story-river and show topbar controls -->
+<%if [[$:/config/Utility]getindex[immersive-reader]match[yes]] %>
+	<%if [[$:/plugins/kookma/tweaks]!is[missing]] :filter[lookup:no[$:/config/Plugins/Disabled/]match[no]] %>
+		<%if [[$:/config/utility/IsReaderMode]get[text]else[no]!match[yes]] %><!-- Seems TW refreshes the tiddlers after all operation in this action tiddler finished-->
+			<$action-setfield $tiddler="$:/state/sidebar" $field="text" $value="no"/>
+			<$action-setfield $tiddler="$:/config/Tweaks" $index="centered-storyriver" $value="yes"/>
+			<$action-setfield $tiddler="$:/config/Tweaks" $index="right-topbar-pagecontrols" $value="yes"/>
+		<%else%>
+			<$action-setfield $tiddler="$:/state/sidebar" $field="text" $value="yes"/>
+			<$action-setfield $tiddler="$:/config/Tweaks" $index="centered-storyriver" $value="no"/>
+			<$action-setfield $tiddler="$:/config/Tweaks" $index="right-topbar-pagecontrols" $value="no"/>
+		<%endif%>
+	<%endif%>
+<%endif%>
