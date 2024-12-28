@@ -4,6 +4,7 @@ title: $:/plugins/kookma/utility/reader-mode/switch-actions
 type: text/vnd.tiddlywiki
 
 <!-- Toggle reader mode status tiddler: Used in  $:/plugins/kookma/utility/styles/reader-mode-->
+<$let tv-action-refresh-policy=always>
 <$action-listops $tiddler="$:/config/utility/IsReaderMode" $field=text $subfilter="+[toggle[yes],[no]]"/>
 
 
@@ -30,7 +31,7 @@ type: text/vnd.tiddlywiki
 <!-- in Immersive Reader mode, if TW-Tweaks is present, center the story-river and show topbar controls -->
 <%if [[$:/config/Utility]getindex[immersive-reader]match[yes]] %>
 	<%if [[$:/plugins/kookma/tweaks]!is[missing]] :filter[lookup:no[$:/config/Plugins/Disabled/]match[no]] %>
-		<%if [[$:/config/utility/IsReaderMode]get[text]else[no]!match[yes]] %><!-- Seems TW refreshes the tiddlers after all operation in this action tiddler finished-->
+		<%if [[$:/config/utility/IsReaderMode]get[text]match[yes]] %>
 			<$action-setfield $tiddler="$:/state/sidebar" $field="text" $value="no"/>
 			<$action-setfield $tiddler="$:/config/Tweaks" $index="centered-storyriver" $value="yes"/>
 			<$action-setfield $tiddler="$:/config/Tweaks" $index="right-topbar-pagecontrols" $value="yes"/>
@@ -41,3 +42,4 @@ type: text/vnd.tiddlywiki
 		<%endif%>
 	<%endif%>
 <%endif%>
+</$let>

@@ -5,5 +5,5 @@ type: text/vnd.tiddlywiki
 \procedure doc-url(url)
 <$let topic={{{ [<url>split[.html]last[]] }}}
       ourl= {{{[<topic>addprefix[https://tiddlywiki.com]]}}} >
-<a href=<<ourl>> target=_blank><$text text={{{[<topic>removeprefix[#]] :and[decodeuri[]] }}} /></a>
+<a href=<<ourl>> target=_blank><$text text={{{[<topic>removeprefix[#]] :and[decodeuricomponent[]] }}} /></a>
 \end
