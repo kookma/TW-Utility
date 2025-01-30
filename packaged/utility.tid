@@ -3,7 +3,7 @@ core-version: >5.3.5
 description: Small tools for authors and developers
 list: readme license history
 name: Utility
-packaged-by: Gatha on 30th January 2025, 12:00:58
+packaged-by: Gatha on 30th January 2025, 12:43:30
 plugin-type: plugin
 source: https://github.com/kookma/TW-Utility
 stability: STABILITY_2_STABLE
